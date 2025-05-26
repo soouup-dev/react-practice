@@ -2,6 +2,10 @@ import React, {useState} from 'react';
 
 function Counter({title}) {
   const [count, setCount] = useState(0);
+  // [count, setCount] : 배열 구조 분해 할당
+  // count : 현재 상태 값
+  // setCount : 상태를 변경하는 함수
+  // const [상태값, 상태변경함수] = useState(초기값);
 
   const handleClick = () => {
     setCount(count + 1);
